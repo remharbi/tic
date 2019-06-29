@@ -13,18 +13,93 @@ h1 {
     letter-spacing: 2px;
 }
 
+/*  SECTIONS  */
+.section1 {
+	clear: both;
+	padding: 0px;
+/*	margin: 0px;*/
+position: absolute;
+     top: 20%;
+     left: 32.5%;
+	}
 
-.square{
-    width:100px;
-    height:100px;
+.section2 {
+	clear: both;
+	padding: 0px;
+/*	margin: 0px;*/
+position: absolute;
+     top: 20%;
+     left: 44%;
+	}
+
+.section3 {
+	clear: both;
+	padding: 0px;
+/*	margin: 0px;*/
+position: absolute;
+     top: 20%;
+     left: 55.5%;
+	}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	 margin: 5% 0 1% 1%;
+	background-color: rgba(236,239,241, 0.8);
+	width: 200px;
+	height: 200px;
+	border-radius: 25px;
+	}
+
+footer {
+  font-family: 'Indie Flower', cursive;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #eceff1;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-.v{
-    border-left:1px solid #000;
-    border-right:1px solid #000;
+span.heart {
+	color: red;
+	font-weight: bold;
+}
+/**/
+/*  GROUPING  */
+/*.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1;*/ /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+/*.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.33%; }
+.span_1_of_3 { width: 32.66%; }
+*/
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+/*@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}*/
+
+
+/*.grid {
+  display: flex; 
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  width: 35%;
 }
 
-.h{
-    border-top:1px solid #000;
-    border-bottom:1px solid #000;
+.cell {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 5px;
+  background-color: #eceff1;
 }
+
+*/
