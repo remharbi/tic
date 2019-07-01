@@ -2,7 +2,20 @@
 
 body {
  background-image: url("images/pic1.png");
+ background-repeat: no-repeat;
+ overflow: hidden;
 }
+
+.tada {
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+}
+
+#title {
+	width: 60%;
+    margin: 0 auto;
+}
+
 
 h1 {
 	text-align: center;
@@ -17,29 +30,26 @@ h1 {
 .section1 {
 	clear: both;
 	padding: 0px;
-/*	margin: 0px;*/
-position: absolute;
-     top: 20%;
-     left: 32.5%;
-	}
+    position: absolute;
+    top: 15%;
+    left: 32.5%;
+}
 
 .section2 {
 	clear: both;
 	padding: 0px;
-/*	margin: 0px;*/
-position: absolute;
-     top: 20%;
-     left: 44%;
-	}
+    position: absolute;
+    top: 15%;
+    left: 44%;
+}
 
 .section3 {
 	clear: both;
 	padding: 0px;
-/*	margin: 0px;*/
-position: absolute;
-     top: 20%;
-     left: 55.5%;
-	}
+    position: absolute;
+    top: 15%;
+    left: 55.5%;
+}
 
 /*  COLUMN SETUP  */
 .col {
@@ -58,48 +68,35 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  color: #eceff1;
-  font-size: 28px;
+  /*color: #eceff1;*/
+  color: black;
+  font-size: 25px;
   font-weight: bold;
+  padding-bottom: 5px;
 }
 
 span.heart {
 	color: red;
 	font-weight: bold;
 }
-/**/
-/*  GROUPING  */
-/*.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1;*/ /* For IE 6/7 */ }
 
-/*  GRID OF THREE  */
-/*.span_3_of_3 { width: 100%; }
-.span_2_of_3 { width: 66.33%; }
-.span_1_of_3 { width: 32.66%; }
-*/
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-/*@media only screen and (max-width: 480px) {
-	.col {  margin: 1% 0 1% 0%; }
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
-}*/
-
-
-/*.grid {
-  display: flex; 
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-around;
-  width: 35%;
+#playerOneImage {
+	width: 300px;
+	margin-left: 150px;
 }
 
-.cell {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 5px;
-  background-color: #eceff1;
+#playerTwoImage {
+	width: 300px;
+	margin-left: 900px;
 }
 
-*/
+#p1Turn {
+	width: 50px;
+	margin-left: 270px;
+}
+
+#p2Turn {
+	width: 50px;
+	margin-left: 1500px;
+}
+
