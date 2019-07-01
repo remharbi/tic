@@ -15,29 +15,35 @@
 <h1>Tic-Tac-Toe</h1>
 </div>
 
+<audio id="coinSound" preload="auto"><source src="./sounds/Coin.mp3"> </source></audio>
+<audio id="themeSong" preload="auto"><source src="./sounds/Overworld.mp3"> </source></audio>
+
+<div class="soundOn"><img src="./images/soundOn.png"></div>
+<div class="soundOff"><img src="./images/soundOff.png"></div>
+<div class="replay"><img src="./images/replay.png"></div>
+
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/games/gam-11/gam1054.cur), auto !important;}</style><a href="http://www.cursors-4u.com/cursor/2009/12/29/mario-hat.html" target="_blank" title="Mario Hat"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Mario Hat" style="position:absolute; top: 0px; right: 0px;" /></a>
+
+
 <img id="playerOneImage" src="./images/mario.png">
 <img id="playerTwoImage" src="./images/bowser.png">
-<div>
-  <img id="p1Turn" class="animated infinite bounceInUp" src="./images/arrow.png">
-</div>
-<div>
-  <img id="p2Turn" class="animated infinite bounceInUp" src="./images/arrow.png">
-</div>
+<img id="p1Turn" class="animated infinite bounceInUp" src="./images/arrow.png">
+<img id="p2Turn" class="animated infinite bounceInUp p2Turn" src="./images/arrow.png">
 
 <div class="section1 group">
-	<div id="cell-1" class="col span_1_of_3"></div>
-	<div id="cell-2" class="col span_1_of_3"></div>
-	<div id="cell-3" class="col span_1_of_3"></div>
+	<div id="cell-1" class="col span_1_of_3 r1 c1 d1"></div>
+	<div id="cell-2" class="col span_1_of_3 r2 c1"></div>
+	<div id="cell-3" class="col span_1_of_3 r3 c1 d2"></div>
 </div>
 <div class="section2 group">
-	<div id="cell-4" class="col span_1_of_3"></div>
-	<div id="cell-5" class="col span_1_of_3"></div>
-	<div id="cell-6" class="col span_1_of_3"></div>
+	<div id="cell-4" class="col span_1_of_3 r1 c2"></div>
+	<div id="cell-5" class="col span_1_of_3 r2 c2 d1 d2"></div>
+	<div id="cell-6" class="col span_1_of_3 r3 c2"></div>
 </div>
 <div class="section3 group">
-	<div id="cell-7" class="col span_1_of_3"></div>
-	<div id="cell-8" class="col span_1_of_3"></div>
-	<div id="cell-9" class="col span_1_of_3"></div>
+	<div id="cell-7" class="col span_1_of_3 r1 c3 d2"></div>
+	<div id="cell-8" class="col span_1_of_3 r2 c3"></div>
+	<div id="cell-9" class="col span_1_of_3 r3 c3 d1"></div>
 </div>
 
 
