@@ -3,11 +3,12 @@
 var p1Score = 0;
 var p2Score = 0;
 var tie = 0;
-var possiblePlays = 80;
+var turns = 8;
 console.log(p1Score);
 console.log(p2Score);
 console.log(tie);
 console.log("Game Started!");
+
 
 
 let playerTurn = [1, 2].sort((a, b) => {
@@ -54,113 +55,78 @@ $(".soundOff").click(function(){
   })
 })
 
+// const checkWin = function(){
+// 		 if ( (c1.classList.contains("p1") && c2.classList.contains("p1") && c3.classList.contains("p1")) 
+//  	|| (c4.classList.contains("p1") && c5.classList.contains("p1") && c6.classList.contains("p1"))
+//  	|| (c7.classList.contains("p1") && c8.classList.contains("p1") && c9.classList.contains("p1"))
+//  	|| (c1.classList.contains("p1") && c4.classList.contains("p1") && c7.classList.contains("p1"))
+//  	|| (c2.classList.contains("p1") && c5.classList.contains("p1") && c8.classList.contains("p1"))
+//  	|| (c3.classList.contains("p1") && c6.classList.contains("p1") && c9.classList.contains("p1"))
+//  	|| (c1.classList.contains("p1") && c5.classList.contains("p1") && c9.classList.contains("p1"))
+//  	|| (c3.classList.contains("p1") && c5.classList.contains("p1") && c7.classList.contains("p1"))    ) {
+// 			alert("Player 1 wins!");
+// 			p1Score++;
 
-const c1 = document.getElementById("cell-1");
-const c2 = document.getElementById("cell-2");
-const c3 = document.getElementById("cell-3");
-const c4 = document.getElementById("cell-4");
-const c5 = document.getElementById("cell-5");
-const c6 = document.getElementById("cell-6");
-const c7 = document.getElementById("cell-7");
-const c8 = document.getElementById("cell-8");
-const c9 = document.getElementById("cell-9");
+// 		} else if ((c1.classList.contains("p2") && c2.classList.contains("p2") && c3.classList.contains("p2")) 
+//  	|| (c4.classList.contains("p2") && c5.classList.contains("p2") && c6.classList.contains("p2"))
+//  	|| (c7.classList.contains("p2") && c8.classList.contains("p2") && c9.classList.contains("p2"))
+//  	|| (c1.classList.contains("p2") && c4.classList.contains("p2") && c7.classList.contains("p2"))
+//  	|| (c2.classList.contains("p2") && c5.classList.contains("p2") && c8.classList.contains("p2"))
+//  	|| (c3.classList.contains("p2") && c6.classList.contains("p2") && c9.classList.contains("p2"))
+//  	|| (c1.classList.contains("p2") && c5.classList.contains("p2") && c9.classList.contains("p2"))
+//  	|| (c3.classList.contains("p2") && c5.classList.contains("p2") && c7.classList.contains("p2"))    ) {
+// 			alert("Player 2 wins!");
+// 			p2Score++;
+// 		} else if (turns == 0){
+// 		alert("it's a tie!");
+// 		tie++; }
+// }
 
-const checkWin = function(){
-		 for (var i=0; i < 10; i++){
-		 if ( (c1.classList.contains("p1") && c2.classList.contains("p1") && c3.classList.contains("p1")) 
- 	|| (c4.classList.contains("p1") && c5.classList.contains("p1") && c6.classList.contains("p1"))
- 	|| (c7.classList.contains("p1") && c8.classList.contains("p1") && c9.classList.contains("p1"))
- 	|| (c1.classList.contains("p1") && c4.classList.contains("p1") && c7.classList.contains("p1"))
- 	|| (c2.classList.contains("p1") && c5.classList.contains("p1") && c8.classList.contains("p1"))
- 	|| (c3.classList.contains("p1") && c6.classList.contains("p1") && c9.classList.contains("p1"))
- 	|| (c1.classList.contains("p1") && c5.classList.contains("p1") && c9.classList.contains("p1"))
- 	|| (c3.classList.contains("p1") && c5.classList.contains("p1") && c7.classList.contains("p1"))    ) {
-			alert("Player 1 wins!");
-			p1Score++;
 
-		} else if ((c1.classList.contains("p2") && c2.classList.contains("p2") && c3.classList.contains("p2")) 
- 	|| (c4.classList.contains("p2") && c5.classList.contains("p2") && c6.classList.contains("p2"))
- 	|| (c7.classList.contains("p2") && c8.classList.contains("p2") && c9.classList.contains("p2"))
- 	|| (c1.classList.contains("p2") && c4.classList.contains("p2") && c7.classList.contains("p2"))
- 	|| (c2.classList.contains("p2") && c5.classList.contains("p2") && c8.classList.contains("p2"))
- 	|| (c3.classList.contains("p2") && c6.classList.contains("p2") && c9.classList.contains("p2"))
- 	|| (c1.classList.contains("p2") && c5.classList.contains("p2") && c9.classList.contains("p2"))
- 	|| (c3.classList.contains("p2") && c5.classList.contains("p2") && c7.classList.contains("p2"))    ) {
-			alert("Player 2 wins!");
-			p2Score++
-		} break; 
+let boxes = document.querySelectorAll('.col');
+
+function testWin(a,b,c){
+ 	if (a.classList.contains("p1") && b.classList.contains("p1") && c.classList.contains("p1")){
+console.log(" P1 win!");
+p1Score++;
+ 	} else if (a.classList.contains("p2") && b.classList.contains("p2") && c.classList.contains("p2")){
+console.log("P2 win!");
+p2Score++;
+} else if (turns == 0){
+		console.log("it's a tie!");
+		tie++; }
 }
-}
+
+
 
 $(".col").click(function(){	
-
-  if (playerTurn[0] == 1){
+if (playerTurn[0] == 1){
   	$(this).off("click").css({"background-image": "url(./images/mario.png)", "background-size": "80%", "background-repeat": "no-repeat", "background-position": "center"});
   	$(this).addClass("p1");
-  	checkWin();
   	playerTurn[0] += 1;
   	turnIndicator();
   } 
   else if (playerTurn[0] == 2){
   	$(this).off("click").css({"background-image": "url(./images/bowser.png)", "background-size": "80%", "background-repeat": "no-repeat", "background-position": "center"});
     $(this).addClass("p2");
-  	checkWin();
   	playerTurn[0] -= 1;
   	turnIndicator();
   }
+turns--;
+console.log(turns);	
 
-	})
+for(var j= 0; j<7 ; i+=3){
+testWin(boxes[j], boxes[j+1], boxes[j+2]);
+}
 
+for(var i= 0; j<3 ; i++){
+testWin(boxes[i], boxes[i+3], boxes[i+6]);
+}
 
+testWin(c1,c5,c9);
+testWin(c3,c5,c7);
 
-// 			console.log(`Player ${playerTurn} won! col 7-9`)
-// 		} else if (c1 === c4 && c4 === c7){
-// 			console.log(`Player ${playerTurn} won! row 1-4-7`)
-// 		} else if (c2 === c5 && c5 === c8){
-// 			console.log(`Player ${playerTurn} won! row 2-5-8`)
-// 		} else if (c3 === c6 && c6 === c9){
-// 			console.log(`Player ${playerTurn} won! row 3-6-9`)
-// 		} else if (c1 === c5 && c5 === c9){
-// 			console.log(`Player ${playerTurn} won! diagonal 1-5-9`)
-// 		} else if (c3 === c5 && c5 === c7){
-// 			console.log(`Player ${playerTurn} won! diagonal 3-5-7`)
-// 		}
-// 	}
-// }
-
-
-
-// function _containsText(element, str) {
-//   var content = [];
-//   for (var i = 0; i < element.length; i += 1) {
-//     if (element[i].innerHTML.indexOf(str) > -1) {
-//       content.push(element[i].innerHTML);
-//     }
-//   }
-//   return content;
-// }
-
-
-// function gameLogic(playerTurn) {
-//   var hasThreeInARow = false,
-//       groups = [document.querySelectorAll(".r1"), document.querySelectorAll(".r2"), document.querySelectorAll(".r3"),
-//                 document.querySelectorAll(".c1"), document.querySelectorAll(".c2"), document.querySelectorAll(".c3"),
-//                 document.querySelectorAll(".d1"), document.querySelectorAll(".d2")];
-//   for (var i = 0; i < groups.length; i++) {
-//     if (_containsText(groups[i], playerTurn).length === 3) {
-//       hasThreeInARow = true;
-//       break;
-//     } else {
-//       possiblePlays -= 1;
-//     }
-//   }
-//   if (hasThreeInARow) {
-//     console.log(`${playerTurn} won!`);
-
-//   } else if (!hasThreeInARow && possiblePlays === 0) {
-//     console.log("it's a Tie!");
-//   }
-// }
+})
 
 
 
