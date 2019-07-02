@@ -50,7 +50,11 @@ $(".soundOn").click(function(){
       $(this).addClass("animated bounceIn");
       $(".col").click(function(){
       	var audio1 = $("#coinSound")[0];
-      audio1.play();
+      if (document.querySelector("#coinSound").currentTime < document.querySelector("#coinSound").duration) 
+        { audio1.load();
+          audio1.play(); 
+      }
+      else {audio1.play();}
       })
 })
 
