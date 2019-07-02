@@ -175,6 +175,5 @@ p {
 .scores {
   position: absolute;
   top: 1%;
-  height: 110px;/*
-  padding-bottom: 20px;*/
+  height: 110px;
 }

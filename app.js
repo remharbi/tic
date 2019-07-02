@@ -6,7 +6,7 @@ var tie = 0;
 window.sessionStorage.setItem("tie", tie);
 var turns = 0;
 console.log("Game Started!");
-document.getElementById("p1Score").innerHTML = playerOneScore;
+document.getElementById("p1Score").innerText = playerOneScore;
 document.getElementById("p2Score").innerText = playerTwoScore;
 
 
@@ -29,7 +29,11 @@ const turnIndicator = function(){
 }
 
 const refresh = function() {
-  // add save data to localStorage
+ 
+  
+  
+  console.log(playerOneScore);
+  console.log(playerTwoScore);
   window.location.reload();
   }
 
@@ -41,6 +45,7 @@ $(".replay").click(function(){
 
 $(".soundOn").click(function(){
 	var audio = $("#themeSong")[0];
+      audio.volume = 0.5;
       audio.play();
       $(this).addClass("animated bounceIn");
       $(".col").click(function(){
@@ -65,18 +70,20 @@ let boxes = document.querySelectorAll('.col');
 function testWin(a,b,c){
  	if (a.classList.contains("p1") && b.classList.contains("p1") && c.classList.contains("p1")){
       playerOneScore+=1;
+      localStorage.setItem(p1Score, playerOneScore);
       document.getElementById("p1Score").innerText = playerOneScore;
-      console.log(p1Score);
       swal("Player 1 won !!!", { button: "retry", className: "p1Win", closeOnClickOutside: false}).then(refresh);
   } else if (a.classList.contains("p2") && b.classList.contains("p2") && c.classList.contains("p2")){
       console.log("Player 2 wins!");
       playerTwoScore+=1;
+      localStorage.setItem(p2Score, playerTwoScore);
       document.getElementById("p2Score").innerText = playerTwoScore;
       swal("Player 2 won !!!", { button: "retry", closeOnClickOutside: false, }).then(refresh);
       
 } else if (turns == 9){
 			console.log("it's a tie!");
 			tie+=1; 
+      localStorage.setItem(tie, tie);
       swal("It's a Tie.", { button: "retry", closeOnClickOutside: false, }).then(refresh);
     }
 }
