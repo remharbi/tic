@@ -20,10 +20,11 @@ body {
 h1 {
 	text-align: center;
 	font-family: 'Luckiest Guy', cursive;
-	font-size: 70px;
+	font-size: 60px;
 	color: yellow;
     text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
     letter-spacing: 2px;
+    margin-top: 40px;
 }
 
 /*  SECTIONS  */
@@ -81,12 +82,13 @@ span.heart {
 }
 
 #playerOneImage {
+  margin-top: 90px;
 	width: 300px;
 	margin-left: 150px;
 }
 
 #playerTwoImage {
-	width: 300px;
+  width: 300px;
 	margin-left: 900px;
 }
 
@@ -136,3 +138,43 @@ span.heart {
   }
 }
 
+.heart {
+  height: 25px;
+}
+
+.swal-overlay {
+  background-color: rgba(242,245,248, 0.45);
+}
+
+.swal-text{
+  font-family: 'Indie Flower', cursive;
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+.swal-button {
+  position: relative;
+  left: -170px;
+  font-size: 20px;
+}
+
+.swal-modal {
+  border: black solid 5px;
+}
+
+p {
+  display: inline-flex;
+  font-family: 'Indie Flower', cursive;
+  font-size: 100px;
+  font-weight: bolder;
+  top: 20px;
+}
+
+
+.scores {
+  position: absolute;
+  top: 1%;
+  height: 110px;/*
+  padding-bottom: 20px;*/
+}

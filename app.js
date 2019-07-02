@@ -1,14 +1,42 @@
 // My JS File
 
-var p1Score = 0;
-var p2Score = 0;
+
+
+var playerOneScore = 0;
+var playerTwoScore = 0;
 var tie = 0;
-var turns = 8;
+var turns = 0;
 console.log(p1Score);
 console.log(p2Score);
 console.log(tie);
 console.log("Game Started!");
 
+document.getElementById("p1Score").innerHTML = playerOneScore;
+document.getElementById("p2Score").innerText = playerTwoScore;
+
+
+
+swal("Welcome!",
+{
+  closeOnClickOutside: false,
+  button: {
+    text: "Start",
+  },
+});
+// $(".noClicks").click(function()){
+// $(this).off("click");
+// }
+
+// Instantiate new modal
+// var modal = new Custombox.modal({
+//   content: {
+//     effect: 'fadein',
+//     target: '#modal'
+//   }
+// });
+
+// // Open
+// modal.open();
 
 
 let playerTurn = [1, 2].sort((a, b) => {
@@ -55,48 +83,37 @@ $(".soundOff").click(function(){
   })
 })
 
-// const checkWin = function(){
-// 		 if ( (c1.classList.contains("p1") && c2.classList.contains("p1") && c3.classList.contains("p1")) 
-//  	|| (c4.classList.contains("p1") && c5.classList.contains("p1") && c6.classList.contains("p1"))
-//  	|| (c7.classList.contains("p1") && c8.classList.contains("p1") && c9.classList.contains("p1"))
-//  	|| (c1.classList.contains("p1") && c4.classList.contains("p1") && c7.classList.contains("p1"))
-//  	|| (c2.classList.contains("p1") && c5.classList.contains("p1") && c8.classList.contains("p1"))
-//  	|| (c3.classList.contains("p1") && c6.classList.contains("p1") && c9.classList.contains("p1"))
-//  	|| (c1.classList.contains("p1") && c5.classList.contains("p1") && c9.classList.contains("p1"))
-//  	|| (c3.classList.contains("p1") && c5.classList.contains("p1") && c7.classList.contains("p1"))    ) {
-// 			alert("Player 1 wins!");
-// 			p1Score++;
-
-// 		} else if ((c1.classList.contains("p2") && c2.classList.contains("p2") && c3.classList.contains("p2")) 
-//  	|| (c4.classList.contains("p2") && c5.classList.contains("p2") && c6.classList.contains("p2"))
-//  	|| (c7.classList.contains("p2") && c8.classList.contains("p2") && c9.classList.contains("p2"))
-//  	|| (c1.classList.contains("p2") && c4.classList.contains("p2") && c7.classList.contains("p2"))
-//  	|| (c2.classList.contains("p2") && c5.classList.contains("p2") && c8.classList.contains("p2"))
-//  	|| (c3.classList.contains("p2") && c6.classList.contains("p2") && c9.classList.contains("p2"))
-//  	|| (c1.classList.contains("p2") && c5.classList.contains("p2") && c9.classList.contains("p2"))
-//  	|| (c3.classList.contains("p2") && c5.classList.contains("p2") && c7.classList.contains("p2"))    ) {
-// 			alert("Player 2 wins!");
-// 			p2Score++;
-// 		} else if (turns == 0){
-// 		alert("it's a tie!");
-// 		tie++; }
-// }
-
+// const turnClickOff = function(){
+// $(".noClicks").click(function()){ $(this).off("click"); }
+//  }
 
 let boxes = document.querySelectorAll('.col');
 
+
+// const p1Div = document.querySelector('.p1Score');
+//         p1Div.innerText = p1Score;
+// const p2Div = document.querySelector('.p2Score');
+//         p2Div.innerText = p2Score;
+
+
 function testWin(a,b,c){
  	if (a.classList.contains("p1") && b.classList.contains("p1") && c.classList.contains("p1")){
-console.log(" P1 win!");
-p1Score++;
- 	} else if (a.classList.contains("p2") && b.classList.contains("p2") && c.classList.contains("p2")){
-console.log("P2 win!");
-p2Score++;
-} else if (turns == 0){
-		console.log("it's a tie!");
-		tie++; }
-}
+      p1Score+=1;
+      console.log(p1Score);
+      swal("Player 1 won !!!", { closeOnClickOutside: false, });
 
+ 	} else if (a.classList.contains("p2") && b.classList.contains("p2") && c.classList.contains("p2")){
+      console.log("Player 2 wins!");
+      p2Score+=1;
+      // console.log(p1Score);
+      swal(`Player 2 won !!! Score: ${p2Score}`, { closeOnClickOutside: false, });
+
+      
+} else if (turns == 9){
+			console.log("it's a tie!");
+			tie+=1; 
+      swal("It's a Tie.", { closeOnClickOutside: false, });}
+}
 
 
 $(".col").click(function(){	
@@ -112,19 +129,19 @@ if (playerTurn[0] == 1){
   	playerTurn[0] -= 1;
   	turnIndicator();
   }
-turns--;
+turns++
 console.log(turns);	
 
-for(var j= 0; j<7 ; i+=3){
+for(var j= 0; j<7 ; j+=3){
 testWin(boxes[j], boxes[j+1], boxes[j+2]);
 }
 
-for(var i= 0; j<3 ; i++){
+for(var i= 0; i<3 ; i++){
 testWin(boxes[i], boxes[i+3], boxes[i+6]);
 }
 
-testWin(c1,c5,c9);
-testWin(c3,c5,c7);
+testWin(boxes[0],boxes[4],boxes[8]);
+testWin(boxes[2],boxes[4],boxes[6]);
 
 })
 
