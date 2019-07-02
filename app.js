@@ -1,50 +1,20 @@
 // My JS File
 
-
-
 var playerOneScore = 0;
 var playerTwoScore = 0;
 var tie = 0;
+window.sessionStorage.setItem("tie", tie);
 var turns = 0;
-console.log(p1Score);
-console.log(p2Score);
-console.log(tie);
 console.log("Game Started!");
-
 document.getElementById("p1Score").innerHTML = playerOneScore;
 document.getElementById("p2Score").innerText = playerTwoScore;
 
 
-
-swal("Welcome!",
-{
-  closeOnClickOutside: false,
-  button: {
-    text: "Start",
-  },
-});
-// $(".noClicks").click(function()){
-// $(this).off("click");
-// }
-
-// Instantiate new modal
-// var modal = new Custombox.modal({
-//   content: {
-//     effect: 'fadein',
-//     target: '#modal'
-//   }
-// });
-
-// // Open
-// modal.open();
-
+swal("Welcome!",{closeOnClickOutside: false, button: {text: "Start"}});
 
 let playerTurn = [1, 2].sort((a, b) => {
     return Math.random() - 0.5;
 })
-
-console.log(playerTurn);
-
 
 const turnIndicator = function(){
 	if (playerTurn[0] == 1) {
@@ -58,8 +28,14 @@ const turnIndicator = function(){
 
 }
 
+const refresh = function() {
+  // add save data to localStorage
+  window.location.reload();
+  }
+
 $(".replay").click(function(){
 	$(this).addClass("animated bounceIn");
+  refresh();
 })
 
 
@@ -83,36 +59,26 @@ $(".soundOff").click(function(){
   })
 })
 
-// const turnClickOff = function(){
-// $(".noClicks").click(function()){ $(this).off("click"); }
-//  }
 
 let boxes = document.querySelectorAll('.col');
 
-
-// const p1Div = document.querySelector('.p1Score');
-//         p1Div.innerText = p1Score;
-// const p2Div = document.querySelector('.p2Score');
-//         p2Div.innerText = p2Score;
-
-
 function testWin(a,b,c){
  	if (a.classList.contains("p1") && b.classList.contains("p1") && c.classList.contains("p1")){
-      p1Score+=1;
+      playerOneScore+=1;
+      document.getElementById("p1Score").innerText = playerOneScore;
       console.log(p1Score);
-      swal("Player 1 won !!!", { closeOnClickOutside: false, });
-
- 	} else if (a.classList.contains("p2") && b.classList.contains("p2") && c.classList.contains("p2")){
+      swal("Player 1 won !!!", { button: "retry", className: "p1Win", closeOnClickOutside: false}).then(refresh);
+  } else if (a.classList.contains("p2") && b.classList.contains("p2") && c.classList.contains("p2")){
       console.log("Player 2 wins!");
-      p2Score+=1;
-      // console.log(p1Score);
-      swal(`Player 2 won !!! Score: ${p2Score}`, { closeOnClickOutside: false, });
-
+      playerTwoScore+=1;
+      document.getElementById("p2Score").innerText = playerTwoScore;
+      swal("Player 2 won !!!", { button: "retry", closeOnClickOutside: false, }).then(refresh);
       
 } else if (turns == 9){
 			console.log("it's a tie!");
 			tie+=1; 
-      swal("It's a Tie.", { closeOnClickOutside: false, });}
+      swal("It's a Tie.", { button: "retry", closeOnClickOutside: false, }).then(refresh);
+    }
 }
 
 
@@ -152,3 +118,5 @@ testWin(boxes[2],boxes[4],boxes[6]);
    //  var audiot = new Audio("file/" +Coin+".mp3");
    //  audiot.play();
   
+
+  //DOMContentLoaded
