@@ -43,12 +43,18 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
 ## Technologies Used:
 - **Command Line**: used for interacting with the computer, navigating the filesystem.
 - **Source Control**: used for interaction, management and upload changes on code to Git repository
+- **wireframe.cc**: used for building the wireframe
 - **Sublime Text Editor**: used for coding with Html, CSS, JQuery and JavaScript
+- **Google Chrome Web Browser**: used for launching the website
 - **Google Chrome Developer Tools**: used to debug and solve problems in the code
 - **SweetAlert**: used for modals popups
 - **Animate.css**: used for animations
+- **Google Fonts**: used for "Luckiest Guy" and "Indie Flower" fonts
 - **Pixlr Photo Editor**: used for removing white background from images used
 - **Audacity Audio Editor**: used for trimming audio 
+
+## Development Process:
+My development process started with a wireframe. I tried to make a simple wireframe just to have an idea of the placement of elements in the game. Afterwards I created my files for html, js and css. The first step was to start building those elements in html and css and get them in their positions and right shapes and sizes. 
 
 ## README Suggestions
 
