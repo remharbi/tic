@@ -54,6 +54,7 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
 - **Google Fonts**: used for "Luckiest Guy" and "Indie Flower" fonts
 - **Pixlr Photo Editor**: used for removing white background from images used
 - **Audacity Audio Editor**: used for trimming audio 
+- **cursors-4u.net**: used for mario hat cursor
 
 ## Development Process:
 The development process started with a wireframe. A simple design of wireframe was made just to give an idea of elements placement and sizes in the game. Afterwards the files for html, js and css were created. The first step afterwards was to start building those elements in html and css and get them in their right positions, shapes and sizes. Once that was done, I've decided to start on the design of the game to get a feel of where it's heading. The simplest thing to start with was choosing a wallpaper, as simple as it is, it has a huge impact on the feel and direction of the game design. Once a wallpaper was chosen the rest of the design elements followed easily (e.g. font style, audio, images and color scheme). 
