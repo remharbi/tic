@@ -8,15 +8,19 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
 
 ## Screenshots:
 - **Initial wireframe design** 
-  - ![WireFrame](http://i63.tinypic.com/24pjghi.png)
+
+   ![WireFrame](http://i63.tinypic.com/24pjghi.png)
 - **End design**
-  - ![Design](http://i66.tinypic.com/1zzqbo.png)
-  - ![Design](http://i66.tinypic.com/al470p.png)
-  - ![Design](http://i65.tinypic.com/10dfoyr.png)
+
+   ![Design](http://i66.tinypic.com/1zzqbo.png)
+   ![Design](http://i66.tinypic.com/al470p.png)
+   ![Design](http://i65.tinypic.com/10dfoyr.png)
 - **Color Scheme**
-  - ![Scheme](http://i67.tinypic.com/qoc85e.jpg)
+
+   ![Scheme](http://i67.tinypic.com/qoc85e.jpg)
 - **Cursor**
-  - ![Cursor](http://i64.tinypic.com/2qcfn10.png)
+
+   ![Cursor](http://i64.tinypic.com/2qcfn10.png)
 
 
 ---
