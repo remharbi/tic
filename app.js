@@ -38,14 +38,15 @@ const turnIndicator = function(){
 
 }
 
-const refresh = function() {
-  window.location.reload();
-  }
-
 $(".replay").click(function(){
 	$(this).addClass("animated bounceIn");
-  refresh();
+      localStorage.setItem("p1Score", 0);
+      localStorage.setItem("p2Score", 0);
+
+
+  refresh(); 
 })
+
 
 
 $(".soundOn").click(function(){
@@ -73,6 +74,8 @@ $(".soundOff").click(function(){
   })
 })
 
+
+const refresh = function(){ window.location.reload(); }
 
 let boxes = document.querySelectorAll('.col');
 
