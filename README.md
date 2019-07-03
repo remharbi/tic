@@ -6,6 +6,8 @@
 This game was created as a part of the learning process at SEI-Eternitiy. The main goals of the project is to be able to build a web application from scratch, apply the programming knowledge that I've aquired, building an application under someone else's specifications, exploring options and creating a well-written README.md file.
 
 ---
+## Screenshots:
+- **Wireframe initial design** ![WireFrame](http://i63.tinypic.com/24pjghi.png)
 
 ## What You've Learned
 
