@@ -138,6 +138,13 @@ span.heart {
   }
 }
 
+@keyframes pulse {
+ 50% {
+    -webkit-transform: scale3d(1.10, 1.10, 1.10);
+    transform: scale3d(1.10, 1.10, 1.10);
+  }
+}
+
 .heart {
   height: 25px;
 }
@@ -147,10 +154,10 @@ span.heart {
 }
 
 .swal-text{
-  font-family: 'Indie Flower', cursive;
-  font-size: 35px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 30px;
   letter-spacing: 2px;
-  font-weight: bolder;
+  font-weight: lighter;
 }
 
 .swal-button {
@@ -165,10 +172,11 @@ span.heart {
 
 p {
   display: inline-flex;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Luckiest Guy';
   font-size: 100px;
-  font-weight: bolder;
+  font-weight: lighter;
   top: 20px;
+  text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
 }
 
 

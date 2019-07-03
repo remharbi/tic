@@ -1,5 +1,6 @@
 // My JS File
 
+// Initializing scores
 let playerOneScore = 0;
 let playerTwoScore = 0;
 let tie = 0;
@@ -8,9 +9,10 @@ console.log("Game Started!");
 document.getElementById("p1Score").innerText = playerOneScore;
 document.getElementById("p2Score").innerText = playerTwoScore;
 
+//----------------------------- Start of game welcome Modal popoup
+//swal("Welcome!",{closeOnClickOutside: false, button: {text: "Start"}});
 
-swal("Welcome!",{closeOnClickOutside: false, button: {text: "Start"}});
-
+//-----------Randomize Player Turn
 let playerTurn = [1, 2].sort((a, b) => {
     return Math.random() - 0.5;
 })
@@ -54,6 +56,8 @@ $(".soundOn").click(function(){
       audio.volume = 0.5;
       audio.play();
       $(this).addClass("animated bounceIn");
+      $(".soundOff").removeClass("animated bounceIn");
+
       $(".col").click(function(){
       	var audio1 = $("#coinSound")[0];
       if (document.querySelector("#coinSound").currentTime < document.querySelector("#coinSound").duration) 
@@ -68,6 +72,7 @@ $(".soundOff").click(function(){
 	var audio = $("#themeSong")[0];
 	audio.pause();
 	$(this).addClass("animated bounceIn");
+      $(".soundOn").removeClass("animated bounceIn");
       $(".col").click(function(){
       	var audio1 = $("#coinSound")[0];
       audio1.pause();
