@@ -16,6 +16,38 @@ let playerTurn = [1, 2].sort((a, b) => {
     return Math.random() - 0.5;
 })
 
+ // Run on page load
+  //   window.onload = function() {
+
+  //       // If sessionStorage is storing default values, exit the function and do not restore data
+  //       if (sessionStorage.getItem('playerOneScore') == 0 && sessionStorage.getItem('playerTwoScore') == 0 && sessionStorage.getItem('tie') == 0 ) {
+  //           return;
+  //       } else {
+  //       // If values are not blank, restore them to the fields
+  //       var playerOneScore = sessionStorage.getItem('playerOneScore');
+  //       if (playerOneScore !== null) $('#p1Score').val(p1Score);
+  //       console.log(playerOneScore);
+
+  //       // var email = sessionStorage.getItem('email');
+  //       // if (email !== null) $('#inputEmail').val(email);
+
+  //       // var subject= sessionStorage.getItem('subject');
+  //       // if (subject!== null) $('#inputSubject').val(subject);
+
+  //       // var message= sessionStorage.getItem('message');
+  //       // if (message!== null) $('#inputMessage').val(message);
+  //   }
+  // }
+
+  //   // Before refreshing the page, save the form data to sessionStorage
+  //   window.onbeforeunload = function() {
+  //       sessionStorage.setItem("p1Score", $('#p1Score').val());
+  //       // sessionStorage.setItem("email", $('#inputEmail').val());
+  //       // sessionStorage.setItem("subject", $('#inputSubject').val());
+  //       // sessionStorage.setItem("message", $('#inputMessage').val());
+  //   }
+
+
 const turnIndicator = function(){
 	if (playerTurn[0] == 1) {
 		document.getElementById("p1Turn").style.display = 'block';
@@ -29,12 +61,14 @@ const turnIndicator = function(){
 }
 
 const refresh = function() {
- 
-  
-  
+    turns = 0;
+    $(".col").on('click', startGame);
+    $(".col").css({"background-image": "none"});
+    $(".col").removeClass("p1");
+    $(".col").removeClass("p1");
   console.log(playerOneScore);
   console.log(playerTwoScore);
-  window.location.reload();
+  // window.location.reload();
   }
 
 $(".replay").click(function(){
@@ -73,26 +107,32 @@ let boxes = document.querySelectorAll('.col');
 
 function testWin(a,b,c){
  	if (a.classList.contains("p1") && b.classList.contains("p1") && c.classList.contains("p1")){
-      playerOneScore+=1;
-      localStorage.setItem(p1Score, playerOneScore);
-      document.getElementById("p1Score").innerText = playerOneScore;
+      // localStorage.setItem(p1Score, playerOneScore);
       swal("Player 1 won !!!", { button: "retry", className: "p1Win", closeOnClickOutside: false}).then(refresh);
+      playerOneScore+=1;
+      console.log(playerOneScore);
+      updateScores();
   } else if (a.classList.contains("p2") && b.classList.contains("p2") && c.classList.contains("p2")){
       console.log("Player 2 wins!");
-      playerTwoScore+=1;
-      localStorage.setItem(p2Score, playerTwoScore);
-      document.getElementById("p2Score").innerText = playerTwoScore;
+      // localStorage.setItem(p2Score, playerTwoScore);
       swal("Player 2 won !!!", { button: "retry", closeOnClickOutside: false, }).then(refresh);
-      
+      playerTwoScore+=1;
+      updateScores();
 } else if (turns == 9){
 			console.log("it's a tie!");
-			tie+=1; 
-      localStorage.setItem(tie, tie);
+			//localStorage.setItem(tie, tie);
       swal("It's a Tie.", { button: "retry", closeOnClickOutside: false, }).then(refresh);
+      tie+=1; 
     }
 }
 
+const updateScores = function(){
+document.getElementById("p1Score").innerText = playerOneScore;
+document.getElementById("p2Score").innerText = playerTwoScore;    
+}
 
+const startGame = function(){
+while(turns <= 9){
 $(".col").click(function(){	
 if (playerTurn[0] == 1){
   	$(this).off("click").css({"background-image": "url(./images/mario.png)", "background-size": "80%", "background-repeat": "no-repeat", "background-position": "center"});
@@ -121,8 +161,11 @@ testWin(boxes[0],boxes[4],boxes[8]);
 testWin(boxes[2],boxes[4],boxes[6]);
 
 })
+}
+}
 
 
+startGame();
 
 
 	// var Coin = $(this).attr('id'); //fileName as id button
