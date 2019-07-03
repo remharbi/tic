@@ -1,5 +1,4 @@
-# ![Tic-Tac-Toe](http://i63.tinypic.com/691ee0.png) ![Tic-Tac-Toe](http://i66.tinypic.com/2epn9fc.png)
-# Project #1: It's a Tic Tac Toe!
+# ![Tic-Tac-Toe](http://i63.tinypic.com/691ee0.png) Project #1: It's a Tic Tac Toe! ![Tic-Tac-Toe](http://i66.tinypic.com/2epn9fc.png)
 
 ## Motivation:
 
