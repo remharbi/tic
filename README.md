@@ -14,7 +14,9 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
   - ![Design](http://i66.tinypic.com/al470p.png)
   - ![Design](http://i65.tinypic.com/10dfoyr.png)
 - **Color Scheme**
-  - ![Design](http://i67.tinypic.com/qoc85e.jpg)
+  - ![Scheme](http://i67.tinypic.com/qoc85e.jpg)
+- **Cursor**
+  - ![Cursor](http://i64.tinypic.com/2qcfn10.png)
 
 
 ---
