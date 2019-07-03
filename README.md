@@ -15,21 +15,9 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
   - ![Design](http://i66.tinypic.com/al470p.png)
   - ![Design](http://i65.tinypic.com/10dfoyr.png)
 
-## What You've Learned
-
-By the time you submit this project, you will have covered new ground in, and reviewed, many of the big themes of the course so far:
-
-- **Command Line**: Practice interacting with the computer and navigating the filesystem from the command line.
-- **Source Control**: Manage and interact with a git repository to store changes to code.
-- **Programming Fundamentals**: Work with objects, arrays, events, while learning how to strategically solve problems and resolve errors.
-- **Web Fundamentals**: Learn how to use HTML, CSS, and JS to build interactive web pages. Also learn how to respond to actions your users take and the data they input into the browser.
-- **Browser Applications**: Dive into JavaScript, and figure out how to use libraries and frameworks to get lots of style and functionality for free.
-- **Deployment**: Host a static web site in a managed hosting environment.
-- **Products and Teams**: Document your code and your code repository so others understand what you've built.
-
 ---
 
-### User Stories
+### User Stories:
 
 - As a user, I should be able to start a new tic tac toe game
 - As a user, I should be able to click on a square to add X first and then O, and so on
@@ -38,16 +26,19 @@ By the time you submit this project, you will have covered new ground in, and re
 - As a user, I should be shown a message when I win, lose or tie
 - As a user, I should not be able to continue playing once I win, lose, or tie
 - As a user, I should be able to play the game again without refreshing the page
+- As a user, I should be able to play sounds when clicking sound button
+- As a user, I should be able to mute sounds when clicking mute button
 
-#### Potential Extra Tic Tac Toe Features
+#### Potential Extra Tic Tac Toe Features:
 
 - Keep track of multiple game rounds with a win, lose and tie counter
 - Allow players to customize their tokens (X, O, name, picture, etc)
 - Use LocalStorage to persist data locally to allow games to continue after page refresh or loss of internet connectivity
-- Involve Audio in your game
 - Create an AI opponent: teach JavaScript to play an unbeatable game against you
-- Make your site fully responsive so that it is playable from a mobile phone
-- Get inventive with your styling e.g. use hover effects or animations
+- Make the site fully responsive so that it is playable from a mobile phone
+
+## Technologies Used:
+
 
 ## README Suggestions
 
