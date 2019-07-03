@@ -6,6 +6,7 @@
 This game was created as a part of the learning process at SEI-Eternitiy. The main goals of the project is to be able to build a web application from scratch, apply the programming knowledge that I've aquired, building an application under someone else's specifications, exploring options and creating a well-written README.md file.
 
 ---
+
 ## Screenshots:
 - **Initial wireframe design** 
   - ![WireFrame](http://i63.tinypic.com/24pjghi.png)
@@ -27,31 +28,6 @@ By the time you submit this project, you will have covered new ground in, and re
 - **Products and Teams**: Document your code and your code repository so others understand what you've built.
 
 ---
-
-## Big Goals
-
-- **Build a web application from scratch**, without a starter codebase
-- Use your programming skills to **work out the game logic for a simple game like Tic Tac Toe**
-- **Separate HTML, CSS, and JavaScript files** in your application
-- Build an application **to a specification that someone else gives you**
-- **Build a dynamic game that allows two players to compete** from the same computer
-- **Craft a `README.md` file that explains your app** to the world
-
----
-
-## Technical Requirements
-
-Your Tic Tac Toe app must:
-- **Render a game board in the browser**
-- **Switch turns** between X and O (or whichever markers you select)
-- **Visually display which side won** if a player gets three in a row, or show a draw if neither player wins
-- **Include separate HTML / CSS / JavaScript files**
-- Stick with **KISS (Keep It Simple Stupid)** and **DRY (Don't Repeat Yourself)** principles
-- Use **JavaScript and/or jQuery** for **DOM manipulation**
-- **Deploy your game online**, where the rest of the world can access it
-  - We will be walking you through this process!
-- Use **semantic markup** for HTML and CSS (adhere to best practices)
-- Have well-formatted, and well-commented code
 
 ### User Stories
 
