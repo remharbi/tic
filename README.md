@@ -11,6 +11,8 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
   - ![WireFrame](http://i63.tinypic.com/24pjghi.png)
 - **End design**
   - ![Design](http://i66.tinypic.com/1zzqbo.png)
+  - ![Design](http://i66.tinypic.com/al470p.png)
+  - ![Design](http://i65.tinypic.com/10dfoyr.png)
 
 ## What You've Learned
 
