@@ -36,9 +36,15 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
 - Use LocalStorage to persist data locally to allow games to continue after page refresh or loss of internet connectivity
 - Create an AI opponent: teach JavaScript to play an unbeatable game against you
 - Make the site fully responsive so that it is playable from a mobile phone
+- Display highest scores
+- Have multiple theme options
+- Allow players to create an account that includes their previous games scores
 
 ## Technologies Used:
-
+- **Command Line**: used for interacting with the computer, navigating the filesystem.
+- **Source Control**: used for interaction, management and upload changes on code to Git repository
+- **Sublime Text Editor**: used for coding with Html, CSS, JQuery and JavaScript
+- **Google Chrome Developer Tools**: used to 
 
 ## README Suggestions
 
