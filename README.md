@@ -68,28 +68,4 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
 - **JavaScript support**
 
 ## Development Process:
-The development process started with a wireframe. A simple design of wireframe was made just to give an idea of elements placement and sizes in the game. Afterwards the files for html, js and css were created. The first step afterwards was to start building those elements in html and css and get them in their right positions, shapes and sizes. Once that was done, I've decided to start on the design of the game to get a feel of where the theme is heading. The simplest thing to start with was choosing a wallpaper, as simple as it is, it has a huge impact on the feel and direction of the game design. Once a wallpaper was chosen the rest of the design elements followed easily (e.g. font style, audio, images and color scheme). 
-
-## README Suggestions
-
-- Document your planning and tell a story about your development process and problem-solving strategy.
-- List unsolved problems which would be fixed in future iterations.
-- Describe how you solved for the winner
-- Describe how some of your favorite functions work
-
-
-
----
-
-- **A `README.md` file** with explanations of the technologies used, the approach taken, installation instructions, unsolved problems, any other useful information etc.
-- A **5 minute presentation** in which you answer the following questions:
-  - What is the game about?
-  - Is there any information you think might help us understand what you built?
-  - What features did you include?
-    - Make sure to explain anything "new" (things that we didn't cover in class)
-  - What was the most difficult part of the project?
-  - What was your favourite part to work on?
-  - What would you like to add next?
-  - Demo of the game
-  
----
+The development process started with a wireframe. A simple design of wireframe was made just to give an idea of elements placement and sizes in the game. Afterwards the files for html, js and css were created. The first step afterwards was to start building those elements in html and css and get them in their right positions, shapes and sizes. Once that was done, I've decided to start on the design of the game to get a feel of where the theme is heading. The simplest thing to start with was choosing a wallpaper, as simple as it is, it has a huge impact on the feel and direction of the game design. Once a wallpaper was chosen the rest of the design elements followed easily (e.g. font style, audio, images and color scheme). The theme has a retro game feel which fonts "Luckiest Guy" and "Indie Flower" were chosen as they [....to be continued] 
