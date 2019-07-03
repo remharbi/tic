@@ -106,19 +106,22 @@ $(".soundOff").click(function(){
 let boxes = document.querySelectorAll('.col');
 
 function testWin(a,b,c){
+  var win = false;
  	if (a.classList.contains("p1") && b.classList.contains("p1") && c.classList.contains("p1")){
       // localStorage.setItem(p1Score, playerOneScore);
       swal("Player 1 won !!!", { button: "retry", className: "p1Win", closeOnClickOutside: false}).then(refresh);
       playerOneScore+=1;
       console.log(playerOneScore);
       updateScores();
+      win = true;
   } else if (a.classList.contains("p2") && b.classList.contains("p2") && c.classList.contains("p2")){
       console.log("Player 2 wins!");
       // localStorage.setItem(p2Score, playerTwoScore);
       swal("Player 2 won !!!", { button: "retry", closeOnClickOutside: false, }).then(refresh);
       playerTwoScore+=1;
       updateScores();
-} else if (turns == 9){
+      win = true;
+} else if (turns == 9 && !win){
 			console.log("it's a tie!");
 			//localStorage.setItem(tie, tie);
       swal("It's a Tie.", { button: "retry", closeOnClickOutside: false, }).then(refresh);
@@ -132,7 +135,6 @@ document.getElementById("p2Score").innerText = playerTwoScore;
 }
 
 const startGame = function(){
-while(turns <= 9){
 $(".col").click(function(){	
 if (playerTurn[0] == 1){
   	$(this).off("click").css({"background-image": "url(./images/mario.png)", "background-size": "80%", "background-repeat": "no-repeat", "background-position": "center"});
@@ -161,9 +163,8 @@ testWin(boxes[0],boxes[4],boxes[8]);
 testWin(boxes[2],boxes[4],boxes[6]);
 
 })
-}
-}
 
+}
 
 startGame();
 
