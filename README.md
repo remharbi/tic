@@ -14,6 +14,9 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
   - ![Design](http://i66.tinypic.com/1zzqbo.png)
   - ![Design](http://i66.tinypic.com/al470p.png)
   - ![Design](http://i65.tinypic.com/10dfoyr.png)
+- **Color Scheme**
+  - ![Design](http://i67.tinypic.com/qoc85e.jpg)
+
 
 ---
 
@@ -54,7 +57,7 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
 - **Audacity Audio Editor**: used for trimming audio 
 
 ## Development Process:
-My development process started with a wireframe. I tried to make a simple wireframe just to have an idea of the placement of elements in the game. Afterwards I created my files for html, js and css. The first step was to start building those elements in html and css and get them in their positions and right shapes and sizes. 
+The development process started with a wireframe. A simple design of wireframe was made just to give an idea of elements placement and sizes in the game. Afterwards the files for html, js and css were created. The first step afterwards was to start building those elements in html and css and get them in their right positions, shapes and sizes. Once that was done, I've decided to start on the design of the game to get a feel of where it's heading. The simplest thing to start with was choosing a wallpaper, as simple as it is, it has a huge impact on the feel and direction of the game design. Once a wallpaper was chosen the rest of the design elements followed easily (e.g. font style, audio, images and color scheme). 
 
 ## README Suggestions
 
