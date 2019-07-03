@@ -47,6 +47,8 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
 - **Google Chrome Developer Tools**: used to debug and solve problems in the code
 - **SweetAlert**: used for modals popups
 - **Animate.css**: used for animations
+- **Pixlr Photo Editor**: used for removing white background from images used
+- **Audacity Audio Editor**: used for trimming audio 
 
 ## README Suggestions
 
