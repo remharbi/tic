@@ -44,7 +44,9 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
 - **Command Line**: used for interacting with the computer, navigating the filesystem.
 - **Source Control**: used for interaction, management and upload changes on code to Git repository
 - **Sublime Text Editor**: used for coding with Html, CSS, JQuery and JavaScript
-- **Google Chrome Developer Tools**: used to 
+- **Google Chrome Developer Tools**: used to debug and solve problems in the code
+- **SweetAlert**: used for modals popups
+- **Animate.css**: used for animations
 
 ## README Suggestions
 
