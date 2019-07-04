@@ -9,7 +9,7 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
 ## Screenshots:
 - **Initial wireframe design** 
 
-  <p align=“center”> ![WireFrame](http://i63.tinypic.com/24pjghi.png) </p>
+  ![WireFrame](http://i63.tinypic.com/24pjghi.png)
 - **End design**
 
    ![Design](http://i66.tinypic.com/1zzqbo.png)
