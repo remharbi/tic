@@ -59,6 +59,7 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
 - Display highest scores
 - Have multiple theme options
 - Allow players to create an account that includes their previous games scores
+- Allow players to play live with other friends on a different computer 
 
 ## Technologies Used:
 - **Command Line**: used for interacting with the computer, navigating the filesystem.
