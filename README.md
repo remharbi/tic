@@ -21,6 +21,18 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
 - **Cursor**
 
    ![Cursor](http://i64.tinypic.com/2qcfn10.png)
+   
+- **Play Audio**
+
+   ![play](http://i68.tinypic.com/zush6q.png)
+
+- **Mute Audio**
+
+   ![mute](http://i64.tinypic.com/r8hxqh.png)
+
+- **Replay Game from Start**
+
+   ![replay](http://i65.tinypic.com/2hzi8er.png)
 
 
 ---
@@ -68,4 +80,4 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
 - **JavaScript support**
 
 ## Development Process:
-The development process started with a wireframe. A simple design of wireframe was made just to give an idea of elements placement and sizes in the game. Afterwards the files for html, js and css were created. The first step afterwards was to start building those elements in html and css and get them in their right positions, shapes and sizes. Once that was done, I've decided to start on the design of the game to get a feel of where the theme is heading. The simplest thing to start with was choosing a wallpaper, as simple as it is, it has a huge impact on the feel and direction of the game design. Once a wallpaper was chosen the rest of the design elements followed easily (e.g. font style, audio, images and color scheme). The theme has a retro game feel which fonts "Luckiest Guy" and "Indie Flower" were chosen as they [....to be continued] 
+The development process started with a wireframe. A simple design of wireframe was made just to give an idea of elements placement and sizes in the game. Afterwards the files for html, js and css were created. The first step afterwards was to start building those elements in html and css and get them in their right positions, shapes and sizes. Once that was done, I've decided to start on the design of the game to get a feel of where the theme is heading. The simplest thing to start with was choosing a wallpaper, as simple as it is, it has a huge impact on the feel and direction of the game design. Once a wallpaper was chosen the rest of the design elements followed easily (e.g. font style, audio, images and color scheme). The theme has a retro game feel which is why the fonts "Luckiest Guy" and "Indie Flower" were chosen. After placing the elements in their position comes the logic part of the game. Javascript and jQuery were used for DOM manipulation, functions, conditions and eventListeners. Eventlisteners were used in buttons such as audio to fire or mute sounds, replay game button
