@@ -9,7 +9,7 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
 ## Screenshots:
 - **Initial wireframe design** 
 
-   ![WireFrame](http://i63.tinypic.com/24pjghi.png)
+  ![WireFrame](http://i63.tinypic.com/24pjghi.png)
 - **End design**
 
    ![Design](http://i66.tinypic.com/1zzqbo.png)
@@ -21,6 +21,18 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
 - **Cursor**
 
    ![Cursor](http://i64.tinypic.com/2qcfn10.png)
+   
+- **Play Audio**
+
+   ![play](http://i68.tinypic.com/zush6q.png)
+
+- **Mute Audio**
+
+   ![mute](http://i64.tinypic.com/r8hxqh.png)
+
+- **Replay Game from Start**
+
+   ![replay](http://i65.tinypic.com/2hzi8er.png)
 
 
 ---
@@ -47,6 +59,7 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
 - Display highest scores
 - Have multiple theme options
 - Allow players to create an account that includes their previous games scores
+- Allow players to play live with other friends on a different computer 
 
 ## Technologies Used:
 - **Command Line**: used for interacting with the computer, navigating the filesystem.
@@ -63,33 +76,20 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
 - **cursors-4u.net**: used for mario hat cursor
 
 ## Installation:
+All you need is:
 - **Web Browser**
 - **Internet Connectivity**
 - **JavaScript support**
 
 ## Development Process:
-The development process started with a wireframe. A simple design of wireframe was made just to give an idea of elements placement and sizes in the game. Afterwards the files for html, js and css were created. The first step afterwards was to start building those elements in html and css and get them in their right positions, shapes and sizes. Once that was done, I've decided to start on the design of the game to get a feel of where the theme is heading. The simplest thing to start with was choosing a wallpaper, as simple as it is, it has a huge impact on the feel and direction of the game design. Once a wallpaper was chosen the rest of the design elements followed easily (e.g. font style, audio, images and color scheme). 
+The development process started with a wireframe. A simple design of wireframe was made just to give an idea of elements placement and sizes in the game. Afterwards the files for html, js and css were created. The first step afterwards was to start building those elements in html and css and get them in their right positions, shapes and sizes. Once that was done, I've decided to start on the design of the game to get a feel of where the theme is heading. The simplest thing to start with was choosing a wallpaper, as simple as it is, it has a huge impact on the feel and direction of the game design. Once a wallpaper was chosen the rest of the design elements followed easily (e.g. font style, audio, images and color scheme). The theme has a retro game feel which is why the fonts "Luckiest Guy" and "Indie Flower" were chosen. After placing the elements in their position comes the logic part of the game. Javascript and jQuery were used for DOM manipulation, functions, conditions and eventListeners. Eventlisteners were used in buttons such as audio to fire or mute sounds, replay game button and cells. The logic of the game is simply as follows: Start the game --> initialize scores if the localStorage has null values else get the previous values of scores from localStorage --> listen to button clicks on cells --> if there is a column/row/diagonal with three cells matching to player 1 or player 2 then win! else tie. --> refresh game.
 
-## README Suggestions
-
-- Document your planning and tell a story about your development process and problem-solving strategy.
-- List unsolved problems which would be fixed in future iterations.
-- Describe how you solved for the winner
-- Describe how some of your favorite functions work
-
-
+## References:
+- https://daneden.github.io/animate.css/
+- https://fonts.google.com/
+- https://sweetalert.js.org/
+- https://wireframe.cc
 
 ---
 
-- **A `README.md` file** with explanations of the technologies used, the approach taken, installation instructions, unsolved problems, any other useful information etc.
-- A **5 minute presentation** in which you answer the following questions:
-  - What is the game about?
-  - Is there any information you think might help us understand what you built?
-  - What features did you include?
-    - Make sure to explain anything "new" (things that we didn't cover in class)
-  - What was the most difficult part of the project?
-  - What was your favourite part to work on?
-  - What would you like to add next?
-  - Demo of the game
-  
----
+<h1>ENJOY!</h1>
