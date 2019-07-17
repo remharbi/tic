@@ -6,6 +6,14 @@ body {
  overflow: hidden;
 }
 
+#p1Score {
+  margin-left: 275px;
+}
+
+#p2Score {
+  margin-left: 1130px;
+}
+
 .tada {
     animation-duration: 2s;
     animation-delay: 0.5s;
@@ -69,7 +77,6 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  /*color: #eceff1;*/
   color: black;
   font-size: 25px;
   font-weight: bold;
@@ -105,10 +112,10 @@ span.heart {
 }
 
 #p2Turnn {
-	position: absolute;
-	width: 50px;
 	margin-left: 1490px;
-	margin-top: 9px;
+  position: absolute;
+  width: 50px;
+  margin-top: 9px;
 }
 
 
@@ -188,6 +195,260 @@ p {
 
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+@media (max-width: 1803px) and (min-width: 1760){
+body {
+  display: flex;
+}
+
+#p1Turn {
+  height: 50px;
+  width: 50px;
+  margin-left: 0; 
+}
+
+#p2Turn {
+  position: absolute;
+  width: 50px;
+  margin-right: 160px;
+  margin-top: 9px;
+}
+
+#playerTwoImage {
+  height: 350px;
+  margin-left: 900px;
+  margin-top: 200px;
+}
+
+#playerOneImage {
+  margin-top: 90px;
+  height: 350px;
+  margin-left: 0px;
+  margin-top: 200px;
+}
+
+
+.col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+    }
+
+
+#p1Turn {
+  width: 50px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+#p2Turn {
+  position: absolute;
+  width: 50px;
+  margin-left: 1160px;
+  margin-right: auto;
+  margin-left: 50px;
+}
+
+#p2Turnn {
+  position: absolute;
+  width: 50px;
+  margin-left: 1490px;
+  margin-top: 9px;
+}
+
+#p1Score {
+ margin-left: 0px;
+}
+
+#p2Score {
+  margin-left: 130px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media (max-width: 1760px) and (min-width: 1670px){
+
+.col {
+  width: 180px;
+  height: 180px;
+    }
+h1 {
+  font-size: 50px;
+}
+}
+
+@media (max-width: 1669px) and (min-width: 1590px){
+
+body {
+background-image: 2000px;
+}
+
+#p1Turn {
+  height: 50px;
+  width: 50px;
+  margin-left: 0px; 
+}
+
+#p2Turn {
+  position: relative;
+  width: 50px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+#playerTwoImage {
+  height: 300px;
+  width: 250px;
+  margin-left: 900px;
+  margin-top: 10px;
+}
+
+#playerOneImage {
+  margin-top: 50px;
+  height: 280px;
+  width: 250px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+
+.col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 180px;
+  height: 180px;
+    }
+
+
+.scores {
+  position: relative;
+  /*top: 1%;*/
+  height: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media (max-width: 1590px) and (min-width: 1335px ){
+  .col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 150px;
+  height: 150px;
+    }
+
+h1 {
+  font-size: 40px;
+}
+
+#p1Turn {
+  height: 50px;
+  width: 50px;
+  margin-left: 0px; 
+}
+
+#p2Turn {
+  position: relative;
+  width: 50px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+}
+
+
+@media (max-width: 1335px) and (min-width: 1000px ){
+ .col {
+  display: block;
+  width: 145px;
+  height: 145px;
+   margin: 10% 10% 1% 1%;
+    }
+#playerTwoImage {
+  height: 250px;
+  width: 200px;
+  margin-left: 900px;
+  margin-top: 10px;
+}
+
+#playerOneImage {
+  margin-top: 50px;
+  height: 230px;
+  width: 200px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+p {
+  display: inline-flex;
+  font-family: 'Luckiest Guy';
+  font-size: 70px;
+  top: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#p1Turn {
+  height: 50px;
+  width: 50px;
+  margin-left: 0px; 
+}
+
+#p2Turn {
+  position: relative;
+  width: 50px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Portrait */
 @media only screen 

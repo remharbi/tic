@@ -8,7 +8,7 @@ let turns = 0;
 console.log("Game Started!");
 document.getElementById("p1Score").innerText = playerOneScore;
 document.getElementById("p2Score").innerText = playerTwoScore;
-
+document.getElementById("p2Turnn").style.display = 'none';
 //----------- Start of game welcome Modal popoup
 //swal("Welcome!",{closeOnClickOutside: false, button: {text: "Start"}});
 
@@ -35,10 +35,11 @@ const turnIndicator = function(){
 	if (playerTurn[0] == 1) {
 		document.getElementById("p1Turn").style.display = 'block';
 		document.getElementById("p2Turn").style.display = 'none';
+    document.getElementById("p2Turnn").style.display = 'none';
 	} else if (playerTurn[0] == 2){
-		document.getElementById("p2Turn").style.marginLeft = '1490px';
-   		document.getElementById("p2Turn").style.display = 'block';
+   	document.getElementById("p2Turnn").style.display = 'block';
 		document.getElementById("p1Turn").style.display = 'none';
+    document.getElementById("p2Turn").style.display = 'none';
 	}
 }
 
