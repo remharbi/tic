@@ -3,7 +3,6 @@
 html, body {
   background-image: url("images/pic1.png");
   background-repeat: repeat;
-  overflow: hidden;
   width: 100%;
   height: auto;
 }
