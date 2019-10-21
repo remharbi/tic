@@ -1,4 +1,4 @@
-# ![Tic-Tac-Toe](http://i63.tinypic.com/691ee0.png)It's a Tic Tac Toe! ![Tic-Tac-Toe](http://i66.tinypic.com/2epn9fc.png)
+#   <img src="./images/mario.png" width="250"/>It's a Tic Tac Toe!<img src="./images/bowser.png" width="250"/>
 
 ## Motivation:
 
@@ -9,30 +9,30 @@ This game was created as a part of the learning process at SEI-Eternitiy. The ma
 ## Screenshots:
 - **Initial wireframe design** 
 
-  ![WireFrame](http://i63.tinypic.com/24pjghi.png)
+  ![WireFrame](./images/01.png)
 - **End design**
 
-   ![Design](http://i66.tinypic.com/1zzqbo.png)
-   ![Design](http://i66.tinypic.com/al470p.png)
-   ![Design](http://i65.tinypic.com/10dfoyr.png)
+   ![Design](./images/02.png)
+   ![Design](./images/03.png)
+   ![Design](./images/04.png)
 - **Color Scheme**
-
-   ![Scheme](http://i67.tinypic.com/qoc85e.jpg)
+ <img src="./images/fbff00-cf001a-56b4fb-76dd26-cde3f2.png" width="200"/>
+  
 - **Cursor**
 
-   ![Cursor](http://i64.tinypic.com/2qcfn10.png)
+   ![Cursor](./images/gam1054.png)
    
 - **Play Audio**
 
-   ![play](http://i68.tinypic.com/zush6q.png)
+   ![play](./images/soundOn.png)
 
 - **Mute Audio**
 
-   ![mute](http://i64.tinypic.com/r8hxqh.png)
+   ![mute](./images/soundOff.png)
 
 - **Replay Game from Start**
 
-   ![replay](http://i65.tinypic.com/2hzi8er.png)
+   ![replay](./images/replay.png)
 
 
 ---
