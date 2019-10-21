@@ -108,11 +108,11 @@ h1 {
 }
 
 #playerOneImage {
-  width: 300px;
+  width: 30vh;
 }
 
 #playerTwoImage {
-  width: 300px;
+  width: 30vh;
 }
 
 #p1Turn {
@@ -214,11 +214,11 @@ span.heart {
   }  
 
   #playerOneImage {
-    width: 250px;
+    width: 25vh;
   }
   
   #playerTwoImage {
-    width: 250px;
+    width: 25vh;
   }
   
 }
@@ -232,11 +232,11 @@ span.heart {
     font-size: 45px;
   }
   #playerOneImage {
-    width: 200px;
+    width: 20vh;
   }
   
   #playerTwoImage {
-    width: 200px;
+    width: 20vh;
   }
 
 }
@@ -259,11 +259,11 @@ span.heart {
   }
 
   #playerOneImage {
-    width: 180px;
+    width: 18vh;
   }
   
   #playerTwoImage {
-    width: 180px;
+    width: 18vh;
   }
 
   .game-btn {
@@ -290,11 +290,11 @@ span.heart {
 }
 
 #playerOneImage {
-  width: 150px;
+  width: 15vh;
 }
 
 #playerTwoImage {
-  width: 150px;
+  width: 15vh;
 }
 
 }
@@ -305,11 +305,11 @@ span.heart {
   }  
 
   #playerOneImage {
-    width: 130px;
+    width: 13vh;
   }
   
   #playerTwoImage {
-    width: 130px;
+    width: 13vh;
   }
 
   p {
@@ -339,11 +339,11 @@ span.heart {
 }
 
 #playerOneImage {
-  width: 100px;
+  width: 10vh;
 }
 
 #playerTwoImage {
-  width: 100px;
+  width: 10vh;
 }
 
 p {
@@ -351,15 +351,15 @@ p {
 }
 
 #p1Turn {
-  width: 30px;
+  width: 3vh;
 }
 
 #p2Turn {
-	width: 30px;
+	width: 3vh;
 }
 
 #p2Turnn {
-  width: 30px;
+  width: 3vh;
 }
 
 }
