@@ -1,140 +1,130 @@
 /* My CSS File */
 
-body {
- background-image: url("images/pic1.png");
- background-repeat: no-repeat;
- overflow: hidden;
+html, body {
+  background-image: url("images/pic1.png");
+  background-repeat: repeat;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
 }
 
-#p1Score {
-  margin-left: 275px;
+div {
+  /* border: 5px solid red; */
 }
 
-#p2Score {
-  margin-left: 1130px;
+p {
+  font-family: 'Luckiest Guy';
+  font-size: 100px;
+  font-weight: lighter;
+  text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
 }
+
+.top-container{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.buttons-container {
+display: flex;
+height: 50%;
+}
+
 
 .tada {
-    animation-duration: 2s;
-    animation-delay: 0.5s;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
 }
 
-#title {
-	width: 60%;
-    margin: 0 auto;
+
+.title-item {
+flex-grow: 1;
+margin-right: 5%;
 }
 
+.tt {
+margin-left: 30%;
+}
 
 h1 {
-	text-align: center;
+  text-align: center;
 	font-family: 'Luckiest Guy', cursive;
 	font-size: 60px;
 	color: yellow;
-    text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
-    letter-spacing: 2px;
-    margin-top: 40px;
+  text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
+  letter-spacing: 2px;
+  margin-top: 40px;
 }
 
 /*  SECTIONS  */
-.section1 {
-	clear: both;
-	padding: 0px;
-    position: absolute;
-    top: 15%;
-    left: 32.5%;
+.noClicks {
+  width:100%;
 }
 
-.section2 {
-	clear: both;
-	padding: 0px;
-    position: absolute;
-    top: 15%;
-    left: 44%;
+.game-container {
+  clear: both;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
 }
 
-.section3 {
-	clear: both;
-	padding: 0px;
-    position: absolute;
-    top: 15%;
-    left: 55.5%;
+.p-container {
+  justify-content: center;
+  width: 20%;
 }
 
+.player-image {
+  display: flex;
+  justify-content: center;
+}
+
+.turn-indicator {
+  display: flex;
+  justify-content: center;
+}
+
+
+.group {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 /*  COLUMN SETUP  */
 .col {
-	display: block;
-	 margin: 5% 0 1% 1%;
-	background-color: rgba(236,239,241, 0.8);
+  border: 5px solid black;
+  background-color: rgba(236,239,241, 0.8);
 	width: 200px;
 	height: 200px;
-	border-radius: 25px;
-	}
-
-footer {
-  font-family: 'Indie Flower', cursive;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  color: black;
-  font-size: 25px;
-  font-weight: bold;
-  padding-bottom: 5px;
+  border-radius: 25px;
+  margin: 3px;
+  z-index: 1;
 }
 
-span.heart {
-	color: red;
-	font-weight: bold;
+
+.score {
+  display: flex;
+  margin: 0;
+  justify-content: center;
 }
 
 #playerOneImage {
-  margin-top: 90px;
-	width: 300px;
-	margin-left: 150px;
+  width: 300px;
 }
 
 #playerTwoImage {
   width: 300px;
-	margin-left: 900px;
 }
 
 #p1Turn {
-	width: 50px;
-	margin-left: 270px;
+  width: 50px;
 }
 
 #p2Turn {
-	position: absolute;
 	width: 50px;
-	margin-left: 1160px;
-	margin-top: 9px;
 }
 
 #p2Turnn {
-	margin-left: 1490px;
-  position: absolute;
   width: 50px;
-  margin-top: 9px;
-}
-
-
-.soundOn {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-}
-
-.soundOff {
-    position: absolute;
-    top: 0px;
-    right: 80px;
-}
-
-.replay {
-    position: absolute;
-    top: 0px;
-    right: 160px;
 }
 
 @keyframes bounceInUp {
@@ -152,12 +142,10 @@ span.heart {
   }
 }
 
-.heart {
-  height: 25px;
-}
+/* ----------- MODAL ----------- */
 
 .swal-overlay {
-  background-color: rgba(242,245,248, 0.45);
+  background-color: rgba(242,245,248, 0.5);
 }
 
 .swal-text{
@@ -167,9 +155,12 @@ span.heart {
   font-weight: lighter;
 }
 
+.swal-footer {
+  display: flex;
+  justify-content: center;
+}
+
 .swal-button {
-  position: relative;
-  left: -170px;
   font-size: 20px;
 }
 
@@ -177,410 +168,198 @@ span.heart {
   border: black solid 5px;
 }
 
-p {
-  display: inline-flex;
-  font-family: 'Luckiest Guy';
-  font-size: 100px;
-  font-weight: lighter;
-  top: 20px;
-  text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
-}
 
 
-.scores {
-  position: absolute;
-  top: 1%;
-  height: 110px;
-}
-
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-@media (max-width: 1803px) and (min-width: 1760){
-body {
-  display: flex;
-}
-
-#p1Turn {
-  height: 50px;
-  width: 50px;
-  margin-left: 0; 
-}
-
-#p2Turn {
-  position: absolute;
-  width: 50px;
-  margin-right: 160px;
-  margin-top: 9px;
-}
-
-#playerTwoImage {
-  height: 350px;
-  margin-left: 900px;
-  margin-top: 200px;
-}
-
-#playerOneImage {
-  margin-top: 90px;
-  height: 350px;
-  margin-left: 0px;
-  margin-top: 200px;
-}
-
-
-.col {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-
-    }
-
-
-#p1Turn {
-  width: 50px;
-  margin-left: auto;
-  margin-right: 50px;
-}
-
-#p2Turn {
-  position: absolute;
-  width: 50px;
-  margin-left: 1160px;
-  margin-right: auto;
-  margin-left: 50px;
-}
-
-#p2Turnn {
-  position: absolute;
-  width: 50px;
-  margin-left: 1490px;
-  margin-top: 9px;
-}
-
-#p1Score {
- margin-left: 0px;
-}
-
-#p2Score {
-  margin-left: 130px;
-}
-
-}
-
-
-@media (max-width: 1760px) and (min-width: 1570px){
-
-.col {
-  width: 180px;
-  height: 180px;
-    }
-h1 {
-  font-size: 50px;
-}
-
-#playerTwoImage {
-  height: 320px;
-  width: 270px;
-}
-
-.scores {
-  top: 6%;
-  height: 90px;
-}
-
-}
-
-@media (max-width: 1669px) and (min-width: 1590px){
-
-body {
-background-image: 2000px;
-}
-
-#p1Turn {
-  height: 50px;
-  width: 50px;
-  top: 5%; 
-}
-
-#p2Turn {
-  position: relative;
-  width: 50px;
-  margin-left: 30px;
-  margin-top: 10px;
-}
-
-#playerTwoImage {
-  height: 250px;
-  width: 200px;
-  margin-left: 900px;
-  margin-top: 10px;
-}
-
-#playerOneImage {
-  margin-top: 50px;
-  height: 280px;
-  width: 250px;
-  margin-left: 100px;
-  margin-top: 10px;
-}
-
-
-.col {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 180px;
-  height: 180px;
-    }
-
-
-.scores {
-  position: relative;
-  /*top: 1%;*/
-  height: 110px;
-}
-
-#p1Turn {
-  margin-left: 10px; 
-}
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-@media (max-width: 1590px) and (min-width: 1335px ){
-  .col {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 150px;
-  height: 150px;
-    }
-
-h1 {
-  font-size: 40px;
-}
-
-#p1Turn {
-  height: 50px;
-  width: 50px;
-  margin-left: 0px; 
-}
-
-#p2Turn {
-  position: relative;
-  width: 50px;
-  margin-left: 30px;
-  margin-top: 10px;
-}
-
-}
-
-
-@media (max-width: 1335px) and (min-width: 1000px ){
- .col {
-  display: block;
-  width: 145px;
-  height: 145px;
-   margin: 10% 10% 1% 1%;
-    }
-#playerTwoImage {
-  height: 250px;
-  width: 200px;
-  margin-left: 900px;
-  margin-top: 10px;
-}
-
-#playerOneImage {
-  margin-top: 50px;
-  height: 230px;
-  width: 200px;
-  margin-left: 100px;
-  margin-top: 10px;
-}
-
-p {
-  display: inline-flex;
-  font-family: 'Luckiest Guy';
-  font-size: 70px;
-  top: 20px;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-#p1Turn {
-  height: 50px;
-  width: 50px;
-  margin-left: 0px; 
-}
-
-#p2Turn {
-  position: relative;
-  width: 50px;
-  margin-left: 30px;
-  margin-top: 10px;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-body {
-   background-size: 4800px;
-}
-
-h1 {
-  font-size: 80px;
-  
-}
-
-.soundOnImg {
-  width: 250px;
-}
-
-.soundOn {
-    right: -250px;
-}
-
-.soundOffImg {
-  width: 250px;
-}
-
-.soundOff {
-    top: 180px;
-    right: -250px;
-}
-
-.replayImg {
-  width: 250px;
-}
-
-.replay {
-    top: 380px;
-    right: -250px;
-}
-
-
-.col {
-  width: 350px;
-  height: 350px;
-  }
-
-.section1 {
-    top: 50%;
-    left: 3%;
-}
-
-.section2 {
-    top: 50%;
-    left: 45%;
-}
-
-.section3 {
-    top: 50%;
-    left: 87%;
-}
-
-#playerOneImage {
-  width: 430px;
-  margin-left: 150px;
-}
-
-#playerTwoImage {
-  width: 430px;
-  margin-left: 500px;
-}
-
-#p1Turn {
-  width: 50px;
-  margin-left: 270px;
-}
-
-#p2Turn {
-  margin-left: 100px;
-  margin-top: 9px;
-}
-
-#p2Turnn {
-  position: absolute;
-  width: 50px;
-  margin-left: 1490px;
-  margin-top: 9px;
-}
+/* ----------- FOOTER ----------- */
 
 footer {
-  bottom: 1%;
+  font-family: 'Indie Flower', cursive;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
   text-align: center;
-  /*color: #eceff1;*/
   color: black;
-  font-size: 60px;
+  font-size: 25px;
   font-weight: bold;
   padding-bottom: 5px;
 }
 
+.heart {
+  height: 25px;
 }
 
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
-body {
-   background-size: 1700px;
+span.heart {
+  color: red;
+	font-weight: bold;
 }
 
-.col {
-  width: 210px;
-  height: 210px;
+/* ----------- MEDIA QUERIES ----------- */
+
+@media (max-width: 1550px){
+  .col {
+    height: 200px;
+    width: 200px;
   }
 
-.section1 {
-    top: 20%;
-    left: 40%;
+  #title {
+    font-size: 55px;
+    width: 70%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  .game-btn {
+    height: 80px;
+  }  
+
+  #playerOneImage {
+    width: 250px;
+  }
+  
+  #playerTwoImage {
+    width: 250px;
+  }
+  
 }
 
-.section2 {
-    top: 20%;
-    left: 65%;
+@media (max-width: 1280px){ 
+  .col {
+    width: 180px;
+    height: 180px;
+  }
+  #title {
+    font-size: 45px;
+  }
+  #playerOneImage {
+    width: 200px;
+  }
+  
+  #playerTwoImage {
+    width: 200px;
+  }
+
 }
 
-.section3 {
-    top: 20%;
-    left: 90%;
+@media (max-width: 1090px){ 
+  .col {
+    height: 150px;
+    width: 150px;
+  }
+
+  #title {
+    font-size: 35px;
+    width: 70%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  p {
+    font-size: 80px;
+  }
+
+  #playerOneImage {
+    width: 180px;
+  }
+  
+  #playerTwoImage {
+    width: 180px;
+  }
+
+  .game-btn {
+    height: 70px;
+  }  
+
+}
+
+@media (max-width: 860px){ 
+.col {
+  width: 100px;
+  height: 100px;
+}
+
+.game-btn {
+  height: 60px;
+}  
+
+#title {
+  font-size: 30px;
+  width: 80%;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+#playerOneImage {
+  width: 150px;
+}
+
+#playerTwoImage {
+  width: 150px;
+}
+
+}
+
+@media (max-width: 720px){ 
+  .col {
+  margin: 1;
+  }  
+
+  #playerOneImage {
+    width: 130px;
+  }
+  
+  #playerTwoImage {
+    width: 130px;
+  }
+
+  p {
+    font-size: 60px;
+  }
+  
+  #title {
+    margin-top: 25%;
+    margin-bottom: 15%;
+  }
+  
+}
+
+@media (max-width: 650px){ 
+  .col {
+  width: 90px;
+  height: 90px;
+  margin: 2px;
+  border: 3px solid black;
+}
+
+#title {
+  font-size: 30px;
+  width: 95%;
+  margin-top: 25%;
+  margin-bottom: 15%;
+}
+
+#playerOneImage {
+  width: 100px;
+}
+
+#playerTwoImage {
+  width: 100px;
+}
+
+p {
+  font-size: 55px;
+}
+
+#p1Turn {
+  width: 30px;
+}
+
+#p2Turn {
+	width: 30px;
+}
+
+#p2Turnn {
+  width: 30px;
 }
 
 }

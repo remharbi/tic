@@ -5,14 +5,23 @@ let playerOneScore = 0;
 let playerTwoScore = 0;
 let tie = 0;
 let turns = 0;
+
 console.log("Game Started!");
+
 document.getElementById("p1Score").innerText = playerOneScore;
 document.getElementById("p2Score").innerText = playerTwoScore;
 document.getElementById("p2Turnn").style.display = 'none';
+
 //----------- Start of game welcome Modal popoup
 //swal("Welcome!",{closeOnClickOutside: false, button: {text: "Start"}});
 
+//-----------Function to update player scores-----------//
 
+const updateScores = function(){
+  document.getElementById("p1Score").innerText = playerOneScore;
+  document.getElementById("p2Score").innerText = playerTwoScore;    
+  }
+    
 
 //-----------Randomize Player Turn-----------//
 let playerTurn = [1, 2].sort((a, b) => {
@@ -38,11 +47,17 @@ const turnIndicator = function(){
     document.getElementById("p2Turnn").style.display = 'none';
 	} else if (playerTurn[0] == 2){
    	document.getElementById("p2Turnn").style.display = 'block';
-		document.getElementById("p1Turn").style.display = 'none';
-    document.getElementById("p2Turn").style.display = 'none';
-	}
-}
-
+     document.getElementById("p1Turn").style.display = 'none';
+     document.getElementById("p2Turn").style.display = 'none';
+    }
+  }
+  
+//-----------Refresh function to reload page-----------//
+  const refresh = function(){ 
+    // window.location.reload(); // Hard reload
+    history.go(0); // Soft reload
+  }
+  
 //-----------Replay button to reload game from start-----------//
 $(".replay").click(function(){
   // When button is clicked make both player scores = 0 in localStorage and call the refresh function
@@ -80,8 +95,6 @@ $(".soundOff").click(function(){
       audio1.pause(); })
 })
 
-//-----------Refresh function to reload page-----------//
-const refresh = function(){ window.location.reload(); }
 
 
 let boxes = document.querySelectorAll('.col');
@@ -90,14 +103,14 @@ let boxes = document.querySelectorAll('.col');
 function testWin(a,b,c){
   var win = false; // define win variable to check if someone won or not (default is false)
  	if (a.classList.contains("p1") && b.classList.contains("p1") && c.classList.contains("p1")){ // if three continuous cells contain the class p1 then player 1 won     
-      swal("Player 1 won !!!", { button: "retry", className: "p1Win", closeOnClickOutside: false}).then(refresh); // show modal popup and then on click fire refresh function
+      swal("Player 1 won !!!", { button: "Retry", className: "p1Win", closeOnClickOutside: false}).then(refresh); // show modal popup and then on click fire refresh function
       playerOneScore+=1; 
       localStorage.setItem("p1Score", playerOneScore); //store new player score in localStorage
       win = true;
       updateScores(); // call updateScores function to update scores
   } else if (a.classList.contains("p2") && b.classList.contains("p2") && c.classList.contains("p2")){
       console.log("Player 2 wins!");
-      swal("Player 2 won !!!", { button: "retry", closeOnClickOutside: false, }).then(refresh);
+      swal("Player 2 won !!!", { button: "Retry", closeOnClickOutside: false, }).then(refresh);
       playerTwoScore+=1;
       console.log("p2Score", playerTwoScore)
       localStorage.setItem("p2Score", playerTwoScore);
@@ -105,18 +118,12 @@ function testWin(a,b,c){
       updateScores();
 } else if (turns == 9 && !win){ //if all boxes are filled and there is no winner then it's a tie
 			console.log("it's a tie!");
-      swal("It's a Tie.", { button: "retry", closeOnClickOutside: false, }).then(refresh);
+      swal("It's a Tie.", { button: "Retry", closeOnClickOutside: false, }).then(refresh);
     }
 }
 
-//-----------Function to update player scores-----------//
-const updateScores = function(){
-document.getElementById("p1Score").innerText = playerOneScore;
-document.getElementById("p2Score").innerText = playerTwoScore;    
-}
-
-
 //-----------Start Game-----------//
+
 const startGame = function(){
 $(".col").click(function(){	
 if (playerTurn[0] == 1){

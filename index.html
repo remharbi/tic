@@ -7,53 +7,68 @@
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
     <title>Tic Tac Toe</title>
 </head>
 <body>
-
-<div id="title" class="animated infinite tada">
-<h1>It's a me, Tic-Tac-Toe!</h1>
-</div>
-
-<div>
-<audio id="coinSound" preload="auto"><source src="./sounds/Coin.mp3"> </source></audio>
-<audio id="themeSong" preload="auto"><source src="./sounds/Overworld.mp3"> </source></audio>
-
-<div class="soundOn"><img class="soundOnImg" src="./images/soundOn.png"></div>
-<div class="soundOff"><img class="soundOffImg" src="./images/soundOff.png"></div>
-<div class="replay"><img class="replayImg" src="./images/replay.png"></div>
-</div>
 <style type="text/css">* {cursor: url(http://cur.cursors-4u.net/games/gam-11/gam1054.cur), auto !important;}</style><a href="http://www.cursors-4u.com/cursor/2009/12/29/mario-hat.html" target="_blank" title="Mario Hat"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Mario Hat" style="position:absolute; top: 0px; right: 0px;" /></a>
 
-<div>
-<div class="scores">
-<p id="p1Score" class="animated infinite pulse"></p>
-<p id="p2Score" class="animated infinite pulse"></p>
-</div>
-<img id="playerOneImage" src="./images/mario.png">
-<img id="playerTwoImage" src="./images/bowser.png">
-<img id="p1Turn" class="animated infinite bounceInUp" src="./images/arrow.png">
-<img id="p2Turn" class="animated infinite bounceInUp" src="./images/arrow.png">
-<img id="p2Turnn" class="animated infinite bounceInUp" src="./images/arrow.png">
+<div class="top-container">
+	<div class="title-item">	
+	<h1 id="title" class="animated infinite tada tt">It's a me, Tic-Tac-Toe!</h1>
+		<audio id="coinSound" preload="auto"><source src="./sounds/Coin.mp3"> </source></audio>
+		<audio id="themeSong" preload="auto"><source src="./sounds/Overworld.mp3"> </source></audio>
+	</div>
+	<div class="buttons-container">
+		<img class="game-btn soundOn soundOnImg" src="./images/soundOn.png">
+		<img class="game-btn soundOff soundOffImg" src="./images/soundOff.png">
+		<img class="game-btn replay replayImg" src="./images/replay.png">
+	</div>
 </div>
 
+
 <div class="noClicks">
-<div class="section1 group">
-	<div class="col col1 span_1_of_3"></div>
-	<div class="col col2 span_1_of_3"></div>
-	<div class="col col3 span_1_of_3"></div>
-</div>
-<div class="section2 group">
-	<div class="col span_1_of_3"></div>
-	<div class="col span_1_of_3"></div>
-	<div class="col span_1_of_3"></div>
-</div>
-<div class="section3 group">
-	<div class="col span_1_of_3"></div>
-	<div class="col span_1_of_3"></div>
-	<div class="col span_1_of_3"></div>
-</div>
+	<div class="game-container">
+		<div class="p-container">
+			<div>
+				<p id="p1Score" class="animated infinite pulse score"></p>
+			</div>
+			<div class="player-image">
+				<img id="playerOneImage" src="./images/mario.png">
+			</div>
+			<div class="turn-indicator">
+				<img id="p1Turn" class="animated infinite bounceInUp" src="./images/arrow.png">
+			</div>
+		</div>
+			<div class="group">
+				<div class="col col1"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+			</div>
+			<div class="group">
+				<div class="col col1"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+			</div>
+			<div class="group">
+				<div class="col col1"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+			</div>
+			<div class="p-container">
+				<div>
+					<p id="p2Score" class="animated infinite pulse score"></p>
+				</div>
+				<div class="player-image">
+					<img id="playerTwoImage" src="./images/bowser.png">
+				</div>
+				<div class="turn-indicator">
+					<img id="p2Turn" class="animated infinite bounceInUp" src="./images/arrow.png">
+					<img id="p2Turnn" class="animated infinite bounceInUp" src="./images/arrow.png">
+				</div>
+			</div>
+	</div>
 </div>
 
 <footer>Made with <img class="heart" src="./images/heart.png"> by Reem</footer>
